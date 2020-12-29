@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Hub spot Test automtion regression suite" verbose="1">
+
+	<listeners>
+	
+	
+		<listener
+			class-name="com.qa.dontknow.testlisteners.TesultsReportListener" />
+		<listener
+			class-name="com.qa.dontknow.testlisteners.AllureReportListener" />
+			
+			
+		<!-- <listener class-name="com.qa.dontknow.testlisteners.ExtentReportListener" 
+			/> -->
+		<!-- <listener class-name="com.qa.dontknow.testlisteners.PdfReportListener" 
+			/> -->
+			
+			
+	</listeners>
+
+	<test name="HubSpot Feature Testing - login">
+		<classes>
+			<class name="com.qa.dontknow.test.UsingDataFromExcelTest" />
+		</classes>
+	</test>
+</suite>
