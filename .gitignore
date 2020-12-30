@@ -14,7 +14,6 @@ hs_err_pid*
 ##############################
 allure-results/
 target/
-test-output/
 screenshots/
 pom.xml.tag
 pom.xml.releaseBackup
