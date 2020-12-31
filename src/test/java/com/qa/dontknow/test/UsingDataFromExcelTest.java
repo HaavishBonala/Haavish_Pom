@@ -16,6 +16,8 @@ public class UsingDataFromExcelTest extends BaseTest{
 	
 	@Test(dataProvider = "contactsTestData")
 	public void loginWithData(String fname, String lname) {
+		System.out.println(fname +"  :  "+ lname);
+		System.out.println("--------");
 		UDFE.login(fname, lname);
 	}
 }

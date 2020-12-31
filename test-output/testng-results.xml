@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="25144" started-at="2020-12-31T12:53:22Z" finished-at="2020-12-31T12:53:47Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="25144" started-at="2020-12-31T12:53:22Z" finished-at="2020-12-31T12:53:47Z">
+      <class name="com.qa.dontknow.test.UsingDataFromExcelTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.dontknow.test.UsingDataFromExcelTest@bae47a0]" name="setUp" is-config="true" duration-ms="9426" started-at="2020-12-31T12:53:22Z" finished-at="2020-12-31T12:53:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginWithData(java.lang.String, java.lang.String)[pri:0, instance:com.qa.dontknow.test.UsingDataFromExcelTest@bae47a0]" name="loginWithData" duration-ms="2798" started-at="2020-12-31T12:53:33Z" data-provider="contactsTestData" finished-at="2020-12-31T12:53:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Testcontact111]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[POM1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithData -->
+        <test-method status="PASS" signature="loginWithData(java.lang.String, java.lang.String)[pri:0, instance:com.qa.dontknow.test.UsingDataFromExcelTest@bae47a0]" name="loginWithData" duration-ms="2585" started-at="2020-12-31T12:53:36Z" data-provider="contactsTestData" finished-at="2020-12-31T12:53:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Testcontact222]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[POM2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithData -->
+        <test-method status="PASS" signature="loginWithData(java.lang.String, java.lang.String)[pri:0, instance:com.qa.dontknow.test.UsingDataFromExcelTest@bae47a0]" name="loginWithData" duration-ms="2608" started-at="2020-12-31T12:53:39Z" data-provider="contactsTestData" finished-at="2020-12-31T12:53:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Testcontact333]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[POM3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithData -->
+        <test-method status="PASS" signature="loginWithData(java.lang.String, java.lang.String)[pri:0, instance:com.qa.dontknow.test.UsingDataFromExcelTest@bae47a0]" name="loginWithData" duration-ms="2771" started-at="2020-12-31T12:53:41Z" data-provider="contactsTestData" finished-at="2020-12-31T12:53:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Testcontact7462387458]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[POM4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithData -->
+        <test-method status="PASS" signature="loginWithData(java.lang.String, java.lang.String)[pri:0, instance:com.qa.dontknow.test.UsingDataFromExcelTest@bae47a0]" name="loginWithData" duration-ms="2625" started-at="2020-12-31T12:53:44Z" data-provider="contactsTestData" finished-at="2020-12-31T12:53:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Testcontact555]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[POM5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithData -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.dontknow.test.UsingDataFromExcelTest@bae47a0]" name="tearDown" is-config="true" duration-ms="827" started-at="2020-12-31T12:53:47Z" finished-at="2020-12-31T12:53:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.dontknow.test.UsingDataFromExcelTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
