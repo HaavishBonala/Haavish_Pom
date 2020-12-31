@@ -1,15 +1,15 @@
 pipeline {
   agent any
   stages {
-    stage('Run On DEV') {
+    stage('Build On DEV') {
       parallel {
-        stage('Run On DEV') {
+        stage('Build On DEV') {
           steps {
             bat 'echo "run on DEV"'
           }
         }
 
-        stage('chrome') {
+        stage('Run On DEV') {
           steps {
             bat 'echo "run on chrome"'
           }
@@ -18,72 +18,60 @@ pipeline {
       }
     }
 
-    stage('Run On QA') {
+    stage('Build On QA') {
       parallel {
-        stage('Run On QA') {
+        stage('Build On QA') {
           steps {
             bat 'echo "run on qa"'
           }
         }
 
-        stage('chome') {
+        stage('Run On QA') {
           steps {
             bat 'echo "run on chrome"'
-          }
-        }
-
-        stage('firefox') {
-          steps {
-            bat 'echo "run on firefox"'
           }
         }
 
       }
     }
 
-    stage('Run On Stage') {
+    stage('Build On Stage') {
       parallel {
-        stage('Run On Stage') {
+        stage('Build On Stage') {
           steps {
             bat 'echo "run on stage"'
           }
         }
 
-        stage('chome') {
+        stage('Run On Stage') {
           steps {
             bat 'echo "run on chrome"'
-          }
-        }
-
-        stage('firefox') {
-          steps {
-            bat 'echo "run on firefox"'
-          }
-        }
-
-        stage('safari') {
-          steps {
-            bat 'echo "run on safari"'
           }
         }
 
       }
     }
 
-    stage('Run On PROD') {
+    stage('Build On PROD') {
       parallel {
-        stage('Run On PROD') {
+        stage('Build On PROD') {
           steps {
             bat 'echo "run on prod"'
           }
         }
 
-        stage('chrome') {
+        stage('Run On PROD') {
           steps {
             bat 'echo "run on chrome"'
           }
         }
 
+      }
+    }
+
+    stage('Publish Reports') {
+      steps {
+        sh 'echo "yuegfvd"'
       }
     }
 
