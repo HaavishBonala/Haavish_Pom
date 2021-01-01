@@ -4,6 +4,8 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
@@ -12,7 +14,11 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
 import com.qa.dontknow.utilities.OptionsManager;
@@ -24,42 +30,83 @@ public class BasePage {
 	public Properties prop;
 	public OptionsManager optionsManager;
 	public static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<WebDriver>();
-
+	
 	/**
-	 * this method is used to initialise the driver on the bases of given browser
-	 * name
+	 * This method is used to initialize the driver on the basis of given
+	 * browser name
 	 * 
-	 * @param prop
-	 * @return init_driver
+	 * @param browserName
+	 * @return driver
 	 */
 	public WebDriver init_driver(Properties prop) {
 
 		String browserName = prop.getProperty("browser").trim();
-		System.out.println("browser name :" + browserName);
-		optionsManager = new OptionsManager(prop);
+
+		System.out.println("browser name is : " + browserName);
+		if (driver == null) {
+			optionsManager = new OptionsManager(prop);
+			if (browserName.equalsIgnoreCase("chrome")) {
+				WebDriverManager.chromedriver().setup();
+
+				if (Boolean.parseBoolean(prop.getProperty("remote"))) {
+					init_remoteWebDriver(browserName);
+				} else {
+					tlDriver.set(new ChromeDriver(optionsManager.ChromeOptions()));
+				}
+			} else if (browserName.equalsIgnoreCase("firefox")) {
+				WebDriverManager.firefoxdriver().setup();
+				if (Boolean.parseBoolean(prop.getProperty("remote"))) {
+					init_remoteWebDriver(browserName);
+				} else {
+					tlDriver.set(new FirefoxDriver(optionsManager.FireFoxOptions()));
+				}
+
+			} else if (browserName.equalsIgnoreCase("safari")) {
+				WebDriverManager.getInstance(SafariDriver.class).setup();
+				// driver = new SafariDriver();
+				tlDriver.set(new SafariDriver());
+			} else {
+				System.out.println(browserName + " is not found, please pass the correct browser....");
+			}
+
+			getDriver().manage().deleteAllCookies();
+			getDriver().manage().window().maximize();
+			getDriver().manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+
+			getDriver().get(prop.getProperty("url"));
+
+			return getDriver();
+		} else {
+			return getDriver();
+		}
+	}
+
+	/**
+	 * Run on remote machine - hub
+	 * 
+	 * @return
+	 */
+	public void init_remoteWebDriver(String browserName) {
 
 		if (browserName.equalsIgnoreCase("chrome")) {
-			WebDriverManager.chromedriver().setup();
-			// driver = new ChromeDriver(optionsManager.ChromeOptions());
-			tlDriver.set(new ChromeDriver(optionsManager.ChromeOptions()));
+			DesiredCapabilities cap = DesiredCapabilities.chrome();
+			cap.setCapability(ChromeOptions.CAPABILITY, optionsManager.ChromeOptions());
+			try {
+				tlDriver.set(new RemoteWebDriver(new URL(prop.getProperty("huburl")), cap));
+			} catch (MalformedURLException e) {
+				e.printStackTrace();
+			}
 		} else if (browserName.equalsIgnoreCase("firefox")) {
-			WebDriverManager.firefoxdriver().setup();
-			// driver = new FirefoxDriver(optionsManager.FireFoxOptions());
-			tlDriver.set(new FirefoxDriver(optionsManager.FireFoxOptions()));
-		} else if (browserName.equalsIgnoreCase("safari")) {
-			WebDriverManager.getInstance(SafariDriver.class).setup();
-			//driver = new SafariDriver();
-			tlDriver.set(new SafariDriver());
-		} else {
-			System.out.println("no such browser found");
+			DesiredCapabilities cap = DesiredCapabilities.firefox();
+			cap.setCapability(FirefoxOptions.FIREFOX_OPTIONS, optionsManager.FireFoxOptions());
+			try {
+				tlDriver.set(new RemoteWebDriver(new URL(prop.getProperty("huburl")), cap));
+			} catch (MalformedURLException e) {
+				e.printStackTrace();
+			}
+
 		}
 
-		getDriver().manage().deleteAllCookies();
-		getDriver().manage().window().maximize();
-		getDriver().manage().timeouts().implicitlyWait(3, TimeUnit.MINUTES);
-
-		getDriver().get(prop.getProperty("url"));
-		return getDriver();
 	}
 	
 	public static synchronized WebDriver getDriver() {

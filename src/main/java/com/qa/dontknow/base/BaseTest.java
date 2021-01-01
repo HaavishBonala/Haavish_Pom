@@ -5,6 +5,7 @@ import java.util.Properties;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 
 import com.qa.dontknow.page.UsingDataFromExcel;
 
@@ -14,10 +15,12 @@ public class BaseTest {
 	public WebDriver driver;
 	public UsingDataFromExcel UDFE;
 	
+	@Parameters("browser")
 	@BeforeTest
-	public void setUp() {
+	public void setUp(String browserName) {
 		bp = new BasePage();
 		prop = bp.init_prop();
+		prop.setProperty("browser", browserName);
 		driver = bp.init_driver(prop);
 		UDFE = new UsingDataFromExcel(driver);
 	}
