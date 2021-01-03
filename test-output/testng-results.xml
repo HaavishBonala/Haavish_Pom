@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="10" passed="10">
   <reporter-output>
   </reporter-output>
-  <suite name="Hub spot Test automtion regression suite" duration-ms="26549" started-at="2021-01-01T18:52:10Z" finished-at="2021-01-01T18:52:37Z">
+  <suite name="Hub spot Test automtion regression suite" duration-ms="32715" started-at="2021-01-03T11:05:37Z" finished-at="2021-01-03T11:06:10Z">
     <groups>
     </groups>
-    <test name="HubSpot Feature Testing - login - chrome" duration-ms="25916" started-at="2021-01-01T18:52:10Z" finished-at="2021-01-01T18:52:36Z">
+    <test name="HubSpot Feature Testing - login - chrome" duration-ms="27670" started-at="2021-01-03T11:05:37Z" finished-at="2021-01-03T11:06:05Z">
       <class name="com.qa.dontknow.test.UsingDataFromExcelTest">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.qa.dontknow.test.UsingDataFromExcelTest@5ffc5491]" name="setUp" is-config="true" duration-ms="5546" started-at="2021-01-01T18:52:10Z" finished-at="2021-01-01T18:52:16Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.qa.dontknow.test.UsingDataFromExcelTest@78dc4696]" name="setUp" is-config="true" duration-ms="6156" started-at="2021-01-03T11:05:37Z" finished-at="2021-01-03T11:05:43Z">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginWithData(java.lang.String, java.lang.String)[pri:0, instance:com.qa.dontknow.test.UsingDataFromExcelTest@5ffc5491]" name="loginWithData" duration-ms="3992" started-at="2021-01-01T18:52:19Z" data-provider="contactsTestData" finished-at="2021-01-01T18:52:23Z">
+        <test-method status="PASS" signature="loginWithData(java.lang.String, java.lang.String)[pri:0, instance:com.qa.dontknow.test.UsingDataFromExcelTest@78dc4696]" name="loginWithData" duration-ms="3723" started-at="2021-01-03T11:05:48Z" data-provider="contactsTestData" finished-at="2021-01-03T11:05:52Z">
           <params>
             <param index="0">
               <value>
@@ -34,7 +34,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithData -->
-        <test-method status="PASS" signature="loginWithData(java.lang.String, java.lang.String)[pri:0, instance:com.qa.dontknow.test.UsingDataFromExcelTest@5ffc5491]" name="loginWithData" duration-ms="3288" started-at="2021-01-01T18:52:23Z" data-provider="contactsTestData" finished-at="2021-01-01T18:52:26Z">
+        <test-method status="PASS" signature="loginWithData(java.lang.String, java.lang.String)[pri:0, instance:com.qa.dontknow.test.UsingDataFromExcelTest@78dc4696]" name="loginWithData" duration-ms="4402" started-at="2021-01-03T11:05:52Z" data-provider="contactsTestData" finished-at="2021-01-03T11:05:56Z">
           <params>
             <param index="0">
               <value>
@@ -50,7 +50,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithData -->
-        <test-method status="PASS" signature="loginWithData(java.lang.String, java.lang.String)[pri:0, instance:com.qa.dontknow.test.UsingDataFromExcelTest@5ffc5491]" name="loginWithData" duration-ms="4053" started-at="2021-01-01T18:52:26Z" data-provider="contactsTestData" finished-at="2021-01-01T18:52:30Z">
+        <test-method status="PASS" signature="loginWithData(java.lang.String, java.lang.String)[pri:0, instance:com.qa.dontknow.test.UsingDataFromExcelTest@78dc4696]" name="loginWithData" duration-ms="2795" started-at="2021-01-03T11:05:56Z" data-provider="contactsTestData" finished-at="2021-01-03T11:05:59Z">
           <params>
             <param index="0">
               <value>
@@ -66,7 +66,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithData -->
-        <test-method status="PASS" signature="loginWithData(java.lang.String, java.lang.String)[pri:0, instance:com.qa.dontknow.test.UsingDataFromExcelTest@5ffc5491]" name="loginWithData" duration-ms="2791" started-at="2021-01-01T18:52:30Z" data-provider="contactsTestData" finished-at="2021-01-01T18:52:33Z">
+        <test-method status="PASS" signature="loginWithData(java.lang.String, java.lang.String)[pri:0, instance:com.qa.dontknow.test.UsingDataFromExcelTest@78dc4696]" name="loginWithData" duration-ms="2942" started-at="2021-01-03T11:05:59Z" data-provider="contactsTestData" finished-at="2021-01-03T11:06:02Z">
           <params>
             <param index="0">
               <value>
@@ -82,7 +82,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithData -->
-        <test-method status="PASS" signature="loginWithData(java.lang.String, java.lang.String)[pri:0, instance:com.qa.dontknow.test.UsingDataFromExcelTest@5ffc5491]" name="loginWithData" duration-ms="2965" started-at="2021-01-01T18:52:33Z" data-provider="contactsTestData" finished-at="2021-01-01T18:52:36Z">
+        <test-method status="PASS" signature="loginWithData(java.lang.String, java.lang.String)[pri:0, instance:com.qa.dontknow.test.UsingDataFromExcelTest@78dc4696]" name="loginWithData" duration-ms="2689" started-at="2021-01-03T11:06:02Z" data-provider="contactsTestData" finished-at="2021-01-03T11:06:05Z">
           <params>
             <param index="0">
               <value>
@@ -98,15 +98,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithData -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.dontknow.test.UsingDataFromExcelTest@5ffc5491]" name="tearDown" is-config="true" duration-ms="73" started-at="2021-01-01T18:52:36Z" finished-at="2021-01-01T18:52:36Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.dontknow.test.UsingDataFromExcelTest@78dc4696]" name="tearDown" is-config="true" duration-ms="69" started-at="2021-01-03T11:06:05Z" finished-at="2021-01-03T11:06:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.dontknow.test.UsingDataFromExcelTest -->
     </test> <!-- HubSpot Feature Testing - login - chrome -->
-    <test name="HubSpot Feature Testing - login - firefox" duration-ms="26549" started-at="2021-01-01T18:52:10Z" finished-at="2021-01-01T18:52:37Z">
+    <test name="HubSpot Feature Testing - login - firefox" duration-ms="32715" started-at="2021-01-03T11:05:37Z" finished-at="2021-01-03T11:06:10Z">
       <class name="com.qa.dontknow.test.UsingDataFromExcelTest">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.qa.dontknow.test.UsingDataFromExcelTest@667e34b1]" name="setUp" is-config="true" duration-ms="11532" started-at="2021-01-01T18:52:10Z" finished-at="2021-01-01T18:52:22Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.qa.dontknow.test.UsingDataFromExcelTest@73aff8f1]" name="setUp" is-config="true" duration-ms="16132" started-at="2021-01-03T11:05:37Z" finished-at="2021-01-03T11:05:53Z">
           <params>
             <param index="0">
               <value>
@@ -117,7 +117,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginWithData(java.lang.String, java.lang.String)[pri:0, instance:com.qa.dontknow.test.UsingDataFromExcelTest@667e34b1]" name="loginWithData" duration-ms="2781" started-at="2021-01-01T18:52:22Z" data-provider="contactsTestData" finished-at="2021-01-01T18:52:25Z">
+        <test-method status="PASS" signature="loginWithData(java.lang.String, java.lang.String)[pri:0, instance:com.qa.dontknow.test.UsingDataFromExcelTest@73aff8f1]" name="loginWithData" duration-ms="4200" started-at="2021-01-03T11:05:54Z" data-provider="contactsTestData" finished-at="2021-01-03T11:05:58Z">
           <params>
             <param index="0">
               <value>
@@ -133,7 +133,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithData -->
-        <test-method status="PASS" signature="loginWithData(java.lang.String, java.lang.String)[pri:0, instance:com.qa.dontknow.test.UsingDataFromExcelTest@667e34b1]" name="loginWithData" duration-ms="2744" started-at="2021-01-01T18:52:25Z" data-provider="contactsTestData" finished-at="2021-01-01T18:52:27Z">
+        <test-method status="PASS" signature="loginWithData(java.lang.String, java.lang.String)[pri:0, instance:com.qa.dontknow.test.UsingDataFromExcelTest@73aff8f1]" name="loginWithData" duration-ms="2722" started-at="2021-01-03T11:05:58Z" data-provider="contactsTestData" finished-at="2021-01-03T11:06:00Z">
           <params>
             <param index="0">
               <value>
@@ -149,7 +149,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithData -->
-        <test-method status="PASS" signature="loginWithData(java.lang.String, java.lang.String)[pri:0, instance:com.qa.dontknow.test.UsingDataFromExcelTest@667e34b1]" name="loginWithData" duration-ms="3134" started-at="2021-01-01T18:52:27Z" data-provider="contactsTestData" finished-at="2021-01-01T18:52:31Z">
+        <test-method status="PASS" signature="loginWithData(java.lang.String, java.lang.String)[pri:0, instance:com.qa.dontknow.test.UsingDataFromExcelTest@73aff8f1]" name="loginWithData" duration-ms="2812" started-at="2021-01-03T11:06:00Z" data-provider="contactsTestData" finished-at="2021-01-03T11:06:03Z">
           <params>
             <param index="0">
               <value>
@@ -165,7 +165,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithData -->
-        <test-method status="PASS" signature="loginWithData(java.lang.String, java.lang.String)[pri:0, instance:com.qa.dontknow.test.UsingDataFromExcelTest@667e34b1]" name="loginWithData" duration-ms="2679" started-at="2021-01-01T18:52:31Z" data-provider="contactsTestData" finished-at="2021-01-01T18:52:33Z">
+        <test-method status="PASS" signature="loginWithData(java.lang.String, java.lang.String)[pri:0, instance:com.qa.dontknow.test.UsingDataFromExcelTest@73aff8f1]" name="loginWithData" duration-ms="2638" started-at="2021-01-03T11:06:03Z" data-provider="contactsTestData" finished-at="2021-01-03T11:06:06Z">
           <params>
             <param index="0">
               <value>
@@ -181,7 +181,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithData -->
-        <test-method status="PASS" signature="loginWithData(java.lang.String, java.lang.String)[pri:0, instance:com.qa.dontknow.test.UsingDataFromExcelTest@667e34b1]" name="loginWithData" duration-ms="2858" started-at="2021-01-01T18:52:33Z" data-provider="contactsTestData" finished-at="2021-01-01T18:52:36Z">
+        <test-method status="PASS" signature="loginWithData(java.lang.String, java.lang.String)[pri:0, instance:com.qa.dontknow.test.UsingDataFromExcelTest@73aff8f1]" name="loginWithData" duration-ms="2794" started-at="2021-01-03T11:06:06Z" data-provider="contactsTestData" finished-at="2021-01-03T11:06:09Z">
           <params>
             <param index="0">
               <value>
@@ -197,7 +197,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithData -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.dontknow.test.UsingDataFromExcelTest@667e34b1]" name="tearDown" is-config="true" duration-ms="696" started-at="2021-01-01T18:52:36Z" finished-at="2021-01-01T18:52:37Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.dontknow.test.UsingDataFromExcelTest@73aff8f1]" name="tearDown" is-config="true" duration-ms="1171" started-at="2021-01-03T11:06:09Z" finished-at="2021-01-03T11:06:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
